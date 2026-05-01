@@ -11474,13 +11474,13 @@ var Validator = {
 //#endregion
 //#region src/style/CardStyles.ts
 var CardInput = styled.input`
-  flex: 4 1;
   border: solid 1px ${(props) => props.isError ? "#FF3D3D" : "#acacac"};
   border-radius: 2px;
   padding: 0.5rem;
   font-size: 11px;
-  height: 32px;
+  height: 44px;
   width: 100%;
+  box-sizing: border-box;
   -moz-appearance: textfield;
   &::placeholder {
     color: #acacac;
