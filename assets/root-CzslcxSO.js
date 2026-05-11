@@ -1,6 +1,9 @@
-import { Links, Meta, Outlet, Scripts, ScrollRestoration, UNSAFE_withComponentProps } from "react-router";
+import { Links, Meta, Outlet, Scripts, ScrollRestoration, UNSAFE_withComponentProps, UNSAFE_withHydrateFallbackProps } from "react-router";
 import { jsx, jsxs } from "react/jsx-runtime";
 //#region src/app/root.tsx
+var HydrateFallback = UNSAFE_withHydrateFallbackProps(function HydrateFallback() {
+	return null;
+});
 var root_default = UNSAFE_withComponentProps(function Root() {
 	return /* @__PURE__ */ jsxs("html", {
 		lang: "ko",
@@ -20,4 +23,4 @@ var root_default = UNSAFE_withComponentProps(function Root() {
 	});
 });
 //#endregion
-export { root_default as default };
+export { HydrateFallback, root_default as default };
